@@ -5,7 +5,7 @@ def classElements(classtag, dataset):
     my_iter = MyIterator(1000)
 
     with open(dataset, encoding='utf-8') as r_file:
-        file_reader = csv.reader(r_file, delimiter = ",")    
+        file_reader = csv.reader(r_file, delimiter=",")
 
         for row in file_reader:
             if row[2] == ' ' + classtag:
@@ -29,7 +29,7 @@ class MyIterator:
 
 
 if __name__ == "__main__":
-    
-    classtag = str(input()) 
+
+    classtag = str(input())
     dataset = str(input())
     classElements(classtag, dataset)
