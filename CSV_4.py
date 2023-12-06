@@ -2,7 +2,14 @@ import csv
 import os
 
 
-def classElements(classtag, dataset):
+def classElements(classtag: str, dataset: str) -> None:
+    """Prints relative paths of provided classtag elements from provided dataset
+
+
+    Args:
+        classtag (str): name of the element class, like 'Cat' or 'Dog'
+        dataset (str): the name of csv file from which def reads needed pictures
+    """
     count = 0
 
     with open(dataset, encoding='utf-8') as r_file:

@@ -2,7 +2,11 @@ import csv
 import os
 
 
-def createCSV1():
+def createCSV1() -> None:
+    """Creates csv file and goes in folder dataset/Cats and dataset/Dogs
+    Rows of csv are created from absolute path of picture, relative and its classtag
+    which is the name of the folder
+    """
     with open("dataset1.csv", mode="w", encoding='utf-8') as w_file:
         file_writer = csv.writer(w_file, delimiter=",", lineterminator="\r")
 
