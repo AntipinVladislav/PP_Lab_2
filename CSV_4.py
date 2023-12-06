@@ -18,5 +18,6 @@ def classElements(classtag, dataset):
 
 if __name__ == "__main__":
     
-    classtag, dataset = map(str(input()))
+    classtag = str(input()) 
+    dataset = str(input())
     classElements(classtag, dataset)
